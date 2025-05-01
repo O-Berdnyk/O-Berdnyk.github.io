@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const hashedPassword = CryptoJS.SHA256(password).toString();
 
     try {
-      const response = await fetch("/api/login", {
+      const response = await fetch("https://berdnykbookstore.netlify.app/api/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

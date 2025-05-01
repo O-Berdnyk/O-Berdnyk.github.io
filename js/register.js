@@ -12,7 +12,7 @@ document.getElementById("registerForm").addEventListener("submit", async functio
   const hashedPassword = CryptoJS.SHA256(password).toString();
 
   try {
-    const response = await fetch("/api/register", {
+    const response = await fetch("https://berdnykbookstore.netlify.app/api/register", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
